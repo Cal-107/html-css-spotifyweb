@@ -1,0 +1,30 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* common and utilities */
+
+.app-main {
+    height: calc(100vh - 90px);
+    background-color: lightskyblue;
+    display: flex;
+}
+
+.column-aside {
+    width: 200px;
+    background-color: limegreen;
+}
+
+.main-content {
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: darkorange;
+}
+
+.app-footer {
+    height: 90px;
+    background-color: lightgreen;
+}
