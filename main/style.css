@@ -6,6 +6,35 @@
     font-family: 'Montserrat', sans-serif;
 }
 /* common and utilities */
+li {
+    list-style: none;
+}
+
+.font-white {
+    color: #fff;
+}
+
+.img-box-1 {
+    width: 50px;
+    height: 50px;
+}
+
+.flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.img-box-1 img {
+    width: 100%;
+}
+
 
 .app-main {
     height: calc(100vh - 90px);
@@ -15,16 +44,26 @@
 
 .column-aside {
     width: 200px;
-    background-color: limegreen;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
 }
 
 .main-content {
     width: calc(100% - 200px);
     height: 100%;
-    background-color: darkorange;
+    background-color: #141922;
 }
 
 .app-footer {
     height: 90px;
-    background-color: lightgreen;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+/* aside bar / menu */
