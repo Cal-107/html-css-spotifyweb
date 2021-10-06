@@ -34,13 +34,12 @@ li {
     padding-top: 100px;
 }
 
-.app-footer {
-    height: 90px;
-    background-color: #282828;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+.p-20 {
+    padding: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
 }
 
 .img-box-1 {
@@ -140,6 +139,7 @@ li {
     width: calc(100% - 240px);
     height: 100%;
     background-color: #141922;
+    overflow: auto;
 }
 
 .upgrade-button {
@@ -165,8 +165,57 @@ li {
 
 .nav-main-content ul li {
     text-transform: uppercase;
-    margin:0 12px;
+    margin: 10px 12px;
     font-size: 14px;
     color: #a3a3a3;
     cursor: pointer;
+}
+
+.album-container {
+    margin-top: 30px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.album-section h2 {
+    margin-top: 30px;
+}
+
+.img-box-2 {
+    width: 200px;
+    height: 200px;
+}
+
+.img-box-2 img {
+    width: 100%;
+}
+
+.album-title h3 {
+    margin: 13px 0 8px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.info-album {
+    font-size: 12px;
+}
+.album-title {
+    margin-right: 15px;
+    width: calc(100% / 6 - 15px);
+}
+
+.bor-radius {
+    border-radius: 50%;
+}
+
+/* footer playbar */
+.app-footer {
+    height: 90px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 }
