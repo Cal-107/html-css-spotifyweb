@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css' integrity='sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==' crossorigin='anonymous'/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -14,12 +15,12 @@
 
     <!-- main -->
     <main class="app-main">
-        <aside class="column-aside font-white">
+        <aside class="column-aside font-gray">
             <section>
 
                 <!-- logo section -->
                 <header>
-                    <div>
+                    <div class="logo-section">
                         <img src="./img/logo.svg" alt="Spotify Logo">
                     </div>
                 </header>
@@ -27,9 +28,9 @@
                 <!-- aside nav 1 -->
                 <nav class="nav-1">
                     <ul>
-                        <li>Home</li>
-                        <li>Cerca</li>
-                        <li>La tua libreria</li>
+                        <li><img src="./img/home.svg" alt="Home Button">Home</li>
+                        <li><img src="./img/search.svg" alt="Search Button"> Cerca</li>
+                        <li><img src="./img/libreria.svg" alt="Library Button"> La tua libreria</li>
                     </ul>
                 </nav>
 
@@ -37,7 +38,7 @@
                 <nav class="nav-2">
                     <h4>Playlist</h4>
                     <ul>
-                        <li>Crea playlist</li>
+                        <li class="flex"><i class="fas fa-plus"></i>Crea playlist</li>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
@@ -50,12 +51,12 @@
 
             <!-- aside info section -->
             <section class="aside-info">
-                <div>
-                    Installa app
+                <div class="install">
+                    <i class="fas fa-arrow-circle-down"></i>Installa App
                 </div>
                 <hr>
-                <div>
-                    John Doe
+                <div class="user">
+                    <i class="far fa-user-circle"></i>John Doe
                 </div>
             </section>
         </aside>
@@ -65,6 +66,8 @@
             <div class="upgrade-button">
                 <button class="button-custom font-white">Effettua l'upgrade</button>
             </div>
+
+
         </section>
     </main>
     
