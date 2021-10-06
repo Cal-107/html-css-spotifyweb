@@ -219,3 +219,9 @@ li {
     align-items: center;
     padding: 15px;
 }
+
+.volume {
+    width: 50px;
+    height: 1px;
+    background-color: #a3a3a3;
+}
