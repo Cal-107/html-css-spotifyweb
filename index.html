@@ -171,25 +171,24 @@
     
     <!-- footer -->
     <footer class="app-footer font-white">
-        <section class="flex align-items-center">
-            <div class="img-box-1">
+        <section class="flex align-items-center box-item-sidebar space-between">
+            <div class="img-box-1 flex align-items-center">
                 <img src="./img/sinister.jpeg" alt="Names Track">
-            </div>
-            <div>
-                <div>Sinister</div>
-                <div>Brano nome</div>
+                <div>
+                    <div class="edit-text">Sinister</div>
+                    <div class="edit-text-2 font-gray">Brano nome</div>
+                </div>
             </div>
 
             <div>
-                <i class="far fa-heart"></i>
-                <i class="far fa-folder"></i>
+                <i class="far fa-heart font-gray"></i>
+                <i class="far fa-folder font-gray"></i>
             </div>
         </section>
 
         <section class="flex direction-column align-items-center ">
-            <div>
-                <nav>
-                    <ul class="flex">
+                <nav class="width-icon-playbar">
+                    <ul class="flex space-between align-items-center">
                         <li><i class="fas fa-random"></i></li>
                         <li><i class="fas fa-step-backward"></i></li>
                         <li><i class="far fa-play-circle"></i></li>
@@ -197,16 +196,17 @@
                         <li><i class="fas fa-redo"></i></li>
                     </ul>
                 </nav>
+            <div class="flex align-items-center mt-10">
+                <div class="edit-text-2">0:25</div>
+                <div class="player-bar mx-20"></div>
+                <div class="edit-text-2">4:35</div>
             </div>
-            <div class="player-bar">
-                player bar
-            </div>
+            
         </section>
 
-        <section>
-            <div>
+        <section class="box-item-sidebar">
                 <nav>
-                    <ul class="flex">
+                    <ul class="flex space-between align-items-center">
                         <li><i class="fas fa-list-ul"></i></li>
                         <li><i class="fas fa-desktop"></i></li>
                         <li><i class="fas fa-volume-up"></i></li>
@@ -215,7 +215,6 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
         </section>
     </footer>
 </body>
