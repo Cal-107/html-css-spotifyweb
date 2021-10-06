@@ -30,6 +30,10 @@ li {
     justify-content: space-between;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -50,9 +54,8 @@ li {
     margin: 0 20px;
 }
 
-.img-box-1 img {
-    width: 50px;
-    margin-right: 10px;
+.bor-radius {
+    border-radius: 50%;
 }
 
 /* aside sidebar / menu */
@@ -152,15 +155,17 @@ li {
     background-color: rgba(0, 0, 0, 0.3);
     text-align: right;
     padding: 20px;
+    z-index: 1;
 }
 
 .button-custom {
-    background-color: #000;
+    background-color: transparent;
     padding: 10px 40px;
     border-radius: 40px;
     border: 1px solid #fff;
     text-transform: uppercase;
     font-size: 12px;
+    text-decoration: none;
 }
 
 .nav-main-content ul {
@@ -173,24 +178,22 @@ li {
     font-size: 14px;
     color: #a3a3a3;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .album-container {
     margin-top: 30px;
 }
 
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
 .album-section h2 {
     margin-top: 30px;
 }
 
-.img-box-2 {
+/* .img-box-2 {
     width: 200px;
     height: 200px;
-}
+    position: relative;
+} */
 
 .img-box-2 img {
     width: 100%;
@@ -210,10 +213,6 @@ li {
     width: calc(100% / 6 - 15px);
 }
 
-.bor-radius {
-    border-radius: 50%;
-}
-
 /* footer playbar */
 .app-footer {
     height: 90px;
@@ -226,6 +225,11 @@ li {
 
 .box-item-sidebar {
     width: 220px;
+}
+
+.img-box-1 img {
+    width: 50px;
+    margin-right: 10px;
 }
 
 .volume {
@@ -262,4 +266,90 @@ li {
 
 .width-icon-playbar {
     width: 50%;
+}
+
+.player-bar-2 {
+    width: 90px;
+    height: 4px;
+    background-color: #a3a3a3;
+    border-radius: 10px;
+    position: relative;
+}
+
+.player-bar-3 {
+    width: 30px;
+    height: 4px;
+    background-color: #a3a3a3;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cursor {
+    width: 16px;
+    height: 16px;
+    border: 1px transparent;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    display: none;
+    cursor: pointer;
+}
+
+/* hover effects */
+.button-custom:hover{
+    transform: scale(1.1);
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.nav-1 li:hover, 
+.nav-2 li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-2 li:hover i {
+    background-color: #fff;
+}
+
+.aside-info .install:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-main-content ul li:hover {
+    color: #fff;
+}
+
+.hover-effect:hover {
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hover-effect-2 div i:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.hover-effect-3 ul li .fa-play-circle:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.album-section .album-title .img-box-2 img:hover {
+    opacity: 40%;
+    cursor: pointer;
+}
+
+.player-bar:hover .player-bar-2, 
+.volume:hover .player-bar-3 {
+    background-color: rgb(11, 171, 30);
+}
+
+.player-bar:hover .cursor, 
+.volume:hover .cursor {
+    display: block;
 }
