@@ -54,6 +54,10 @@ li {
     margin: 0 20px;
 }
 
+.mr-5 {
+    margin-right: 5px;
+}
+
 .bor-radius {
     border-radius: 50%;
 }
@@ -61,7 +65,6 @@ li {
 /* aside sidebar / menu */
 .app-main {
     height: calc(100vh - 90px);
-    background-color: lightskyblue;
     display: flex;
 }
 
@@ -81,6 +84,7 @@ li {
 .nav-1 {
     margin: 20px 0 10px;
 }
+
 .nav-1 li::before {
     content: '';
     display: block;
@@ -169,7 +173,7 @@ li {
 }
 
 .button-custom {
-    background-color: transparent;
+    background-color: #0e1118;
     padding: 10px 40px;
     border-radius: 40px;
     border: 1px solid #fff;
@@ -265,7 +269,7 @@ li {
 }
 
 .volume {
-    width: 100px;
+    width: 6vw;
     height: 4px;
     background-color: #5a5a5a;
     border-radius: 10px;
@@ -285,7 +289,7 @@ li {
 }
 
 .player-bar {
-    width: 300px;
+    width: 35vw;
     height: 4px;
     background-color: #5a5a5a;
     border-radius: 10px;
@@ -296,12 +300,12 @@ li {
     margin: 0 10px;
 }
 
-.width-icon-playbar {
-    width: 50%;
+.width-icon-playbar li  {
+    margin: 5px 5px;
 }
 
 .player-bar-2 {
-    width: 90px;
+    width: 10%;
     height: 4px;
     background-color: #a3a3a3;
     border-radius: 10px;
@@ -309,7 +313,7 @@ li {
 }
 
 .player-bar-3 {
-    width: 30px;
+    width: 50%;
     height: 4px;
     background-color: #a3a3a3;
     border-radius: 10px;
@@ -401,4 +405,109 @@ li {
 .nav-1 li:hover::before {
     transition: transform .5s ease;
     transform: scaleY(1);
+}
+
+/* responsive */
+
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    .album-title {
+        margin-right: 15px;
+        width: calc(100% / 4 - 15px);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .album-title {
+        margin-right: 15px;
+        width: calc(100% / 3 - 15px);
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px) {
+    .album-title {
+        margin-right: 15px;
+        width: calc(100% / 2 - 15px);
+    }
+
+    .logo-section img,
+    .nav-1 li span, 
+    .nav-2,
+    .aside-info span,
+    .aside-info hr {
+        display: none;
+    }
+
+    .logo-section {
+        width: 100%;
+    }
+
+    .logo-section::after {
+        content: url(../img/logo-small.svg);
+        width: 100%;
+    }
+
+    .column-aside {
+        width: 50px;
+        padding: 5px 15px;
+    }
+
+    .aside-info i {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .main-content {
+        width: calc(100% - 50px);
+        height: 100%;
+    }
+
+    .upgrade-button {
+        position: fixed;
+        width: calc(100% - 50px);
+    }
+
+}
+
+@media screen and (max-width: 549px) {
+    .album-title {
+        margin-right: 15px;
+        width: calc(100% / 2 - 15px);
+    }
+
+    .logo-section img,
+    .nav-1 li span, 
+    .nav-2,
+    .aside-info span,
+    .aside-info hr {
+        display: none;
+    }
+
+    .logo-section {
+        width: 100%;
+    }
+
+    .logo-section::after {
+        content: url(../img/logo-small.svg);
+        width: 100%;
+    }
+
+    .column-aside {
+        width: 50px;
+        padding: 5px 15px;
+    }
+
+    .aside-info i {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .main-content {
+        width: calc(100% - 50px);
+        height: 100%;
+    }
+
+    .upgrade-button {
+        position: fixed;
+        width: calc(100% - 50px);
+    }
 }
