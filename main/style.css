@@ -81,6 +81,15 @@ li {
 .nav-1 {
     margin: 20px 0 10px;
 }
+.nav-1 li::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 25px;
+    margin-right: 2px;
+    background-color: rgb(11, 171, 30);
+    transform: scaleY(0);
+}
 
 .nav-1 li {
     display: flex;
@@ -93,6 +102,7 @@ li {
 .nav-1 li img {
     width: 25px;
     margin-right: 5px;
+    filter: contrast(30%);
 }
 
 .nav-2 h4 {
@@ -181,6 +191,16 @@ li {
     font-weight: 600;
 }
 
+.nav-main-content ul li::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: rgb(11, 171, 30);
+    transform: scaleX(0);
+}
+
 .album-container {
     margin-top: 30px;
 }
@@ -189,11 +209,23 @@ li {
     margin-top: 30px;
 }
 
-/* .img-box-2 {
-    width: 200px;
-    height: 200px;
+.img-box-2 {
+    /* width: 200px;
+    height: 200px; */
     position: relative;
-} */
+}
+
+.img-box-2::after {
+    content: '\f144';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
 
 .img-box-2 img {
     width: 100%;
@@ -304,10 +336,12 @@ li {
     cursor: pointer;
 }
 
-.nav-1 li:hover, 
+.nav-1 li:hover,
+.nav-1 li:hover img, 
 .nav-2 li:hover {
     color: #fff;
     cursor: pointer;
+    filter: contrast(100%);
 }
 
 .nav-2 li:hover i {
@@ -321,6 +355,11 @@ li {
 
 .nav-main-content ul li:hover {
     color: #fff;
+}
+
+.nav-main-content ul li:hover::after {
+    transition: transform .5s ease;
+    transform: scaleX(1);
 }
 
 .hover-effect:hover {
@@ -344,6 +383,11 @@ li {
     cursor: pointer;
 }
 
+.img-box-2:hover::after {
+    opacity: 100%;
+    cursor: pointer;
+}
+
 .player-bar:hover .player-bar-2, 
 .volume:hover .player-bar-3 {
     background-color: rgb(11, 171, 30);
@@ -352,4 +396,9 @@ li {
 .player-bar:hover .cursor, 
 .volume:hover .cursor {
     display: block;
+}
+
+.nav-1 li:hover::before {
+    transition: transform .5s ease;
+    transform: scaleY(1);
 }
